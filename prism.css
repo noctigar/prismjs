@@ -1,5 +1,5 @@
 /* PrismJS 1.9.0
-http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+actionscript+c+aspnet+bash+basic+cpp+csharp+coffeescript+ruby+diff+git+go+haml+http+java+json+kotlin+latex+markdown+objectivec+perl+php+php-extras+python+sass+scss+scheme+smarty+sql+swift+vbnet+vim+yaml&plugins=line-highlight+line-numbers+toolbar+keep-markup+show-language+copy-to-clipboard */
+http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+actionscript+c+aspnet+basic+cpp+csharp+coffeescript+ruby+diff+git+go+haml+http+java+json+kotlin+latex+markdown+objectivec+perl+php+php-extras+python+sass+scss+scheme+smarty+sql+swift+vbnet+vim+yaml&plugins=line-highlight+line-numbers+toolbar+keep-markup+show-language+copy-to-clipboard */
 /**
  * okaidia theme for JavaScript, CSS and HTML
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
@@ -32,6 +32,7 @@ pre[class*="language-"] {
 /* Code blocks */
 pre[class*="language-"] {
 	padding: 1em;
+	padding-top: 1.5em;
 	margin: .5em 0;
 	overflow: auto;
 	border-radius: 0.3em;
@@ -39,7 +40,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #272822;
+	background: #3c3223;
 }
 
 /* Inline code */
@@ -221,8 +222,10 @@ pre.code-toolbar > .toolbar {
 	position: absolute;
 	top: .3em;
 	right: .2em;
+        /*
 	transition: opacity 0.3s ease-in-out;
 	opacity: 0;
+        */
 }
 
 pre.code-toolbar:hover > .toolbar {
@@ -260,6 +263,10 @@ pre.code-toolbar > .toolbar span {
 	background: rgba(224, 224, 224, 0.2);
 	box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
 	border-radius: .5em;
+}
+
+pre.code-toolbar > .toolbar span {
+	font-size: 1.1em;
 }
 
 pre.code-toolbar > .toolbar a:hover,
