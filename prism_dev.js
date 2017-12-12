@@ -2632,7 +2632,7 @@ function highlightLines(pre, lines, classes) {
 				line.setAttribute('data-end', end);
 			}
 			
-			line.style.top = (start - offset - 1) * lineHeight + 'px';
+			line.style.top = (start - offset - 1) * lineHeight + 11 + 'px';
 
 			line.textContent = new Array(end - start + 2).join(' \n');
 		}
