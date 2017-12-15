@@ -9,10 +9,25 @@
       p <mark>123</mark>123
     end</code></pre>
 
-    <pre data-language="SaVG v1.1" data-line="1"><code class="language-ruby">p 11
-    def hoge
-      p 123
-    end</code></pre>
+    <pre data-language="none" data-line="1-11,12"><code class="language-ruby">class Hoge
+  def hoge
+    p 123
+  end
+
+  def foo
+    p "foo!"
+  end
+
+  def ho
+    hoo
+  end
+
+  private
+
+  def hoo
+   p "hoo!"
+  end
+end</code></pre>
 
     <pre data-language="SVG v1.1" data-src="logo.svg">aaaa</pre>
   </body>
