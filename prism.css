@@ -125,7 +125,7 @@ pre[class*="language-"] {
 
 pre[data-line] {
 	position: relative;
-	padding: 1em 0 1em 3em;
+	padding: 1.65em 0 1em 3em;
 }
 
 .line-highlight {
